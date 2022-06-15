@@ -12,19 +12,28 @@ class Solution:
     def __init__(self) -> None:
         pass
 
+    # def singleNonDuplicate(self, nums: List[int]) -> int:
+    #     """ Returns the single element that appears only once
+    #         in a sorted array
+    #     """
+    #     even_index = 0
+    #     single_element = nums[even_index]
+    #     while even_index < len(nums)-1:
+    #         if single_element != nums[even_index + 1]:
+    #             break
+    #         even_index += 2
+    #         single_element = nums[even_index]
+    #     return single_element
+
     def singleNonDuplicate(self, nums: List[int]) -> int:
-        """ Returns the single element that appears only once 
-            in a sorted array
-        """
-        even_index = 0
-        single_element = nums[even_index]
-        while even_index < len(nums)-1:
-            if single_element != nums[even_index + 1]:
-                break
-            even_index += 2
-            single_element = nums[even_index]
+        single_element = []
+        for element in nums:
+            if element in single_element:
+                single_element.remove(element)
+            else:
+                single_element.append(element)
         return single_element
 
 
 solution_instance = Solution()
-print(solution_instance.singleNonDuplicate([3, 3, 7, 7, 10, 11, 11]))
+print(solution_instance.singleNonDuplicate([3, 3, 11, 7, 10, 11, 7]))
