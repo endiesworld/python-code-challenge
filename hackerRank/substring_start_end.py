@@ -23,8 +23,8 @@ import re
 
 # input_str = input()
 # search_str = input()
-input_str = 'vineetdoshi'
-search_str = 'i'
+input_str = input()
+search_str = input()
 # pattern = '^{}'.format(search_str)
 match_count = 0
 ans = []
