@@ -20,9 +20,11 @@ def maxSubArray(nums):
 
 
 item = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-# item = [-2, 1, -3, 4]
-# # # item = [1]
-# item = [5, 4, -1, 7, 8]
+item = [-2, 1, -3, 4]
+item = [3, -5, 1, 9, -2, 4]
+item = [8, -19, 5, -4, 20]
+# item = [-1, -2]
+item = [5, 4, -1, 7, 8]
 
 x = [5, 4, 3, 7, 9]
 y = [-1, 7, 8]
@@ -32,29 +34,23 @@ y = [-1, 7, 8]
 def texter(nums):
     accum = nums[0]
     start = 0
-    stop = 0
+    stop = None
     maxi = accum
-    skip = True
-
-    for index, data in enumerate(nums[1:]):
-
-        if (data > (accum + data)) & (data > maxi):
-            print(f'data: {data}')
-            start = index + 1
+# skip = True
+    datas = nums[1:]
+    for data in datas:
+        if((data + accum < data) & (data > maxi)):
             accum = data
-            maxi = data
-            skip = True
-            print(f'Accumulator is: {accum}')
-        elif (maxi <= (maxi + data)) & (skip):
-            print(f'Changed stop @ index {int(index) +1 }')
-            print(f'Data is: {data}')
-            # print(f'Accumulator is: {accum + data}')
-            stop = index + 2
-            # skip = True
+            maxi = accum
+        elif (accum + data > maxi):
+            accum = accum + data
+            maxi = accum
+        elif (data > accum + data):
+            accum = data
         else:
             accum += data
-            skip = False
-    return (nums[start:stop], sum(nums[start:stop]))
+
+    return (maxi)
 
 
 print(texter(item))
