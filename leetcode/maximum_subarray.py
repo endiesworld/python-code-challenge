@@ -26,15 +26,9 @@ item = [8, -19, 5, -4, 20]
 # item = [-1, -2]
 item = [5, 4, -1, 7, 8]
 
-x = [5, 4, 3, 7, 9]
-y = [-1, 7, 8]
-# print(maxSubArray(item))
-
 
 def texter(nums):
     accum = nums[0]
-    start = 0
-    stop = None
     maxi = accum
 # skip = True
     datas = nums[1:]
