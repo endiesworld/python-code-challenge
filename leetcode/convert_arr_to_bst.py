@@ -11,3 +11,46 @@ Input: nums = [1,3]
 Output: [3,1]
 Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 """
+
+arr = [-10, -3, 0, 5, 9]
+
+
+class Node:
+    def __init__(self, value) -> None:
+        self.value = value
+        self.left = None
+        self.right = None
+
+
+def sortedArrayToBST(arr):
+
+    if not arr:
+        return None
+
+    # find middle
+    mid = (len(arr)) // 2
+
+    # make the middle element the root
+    root = Node(arr[mid])
+
+    # left subtree of root has all
+    # values <arr[mid]
+    root.left = sortedArrayToBST(arr[:mid])
+    print(root.value)
+    # right subtree of root has all
+    # values >arr[mid]
+    root.right = sortedArrayToBST(arr[mid+1:])
+    print(root.value)
+    return root
+
+
+def preOrder(node):
+    if not node:
+        return
+
+    print(node.value)
+    preOrder(node.right)
+    preOrder(node.left)
+
+
+print(sortedArrayToBST(arr))
