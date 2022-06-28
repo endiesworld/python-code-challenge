@@ -29,28 +29,29 @@ def sortedArrayToBST(arr):
 
     # find middle
     mid = (len(arr)) // 2
-
+    print(f'mid point is {mid}')
     # make the middle element the root
     root = Node(arr[mid])
+    print(f'node value is: {root.value}')
 
     # left subtree of root has all
     # values <arr[mid]
     root.left = sortedArrayToBST(arr[:mid])
-    print(root.value)
+    # print(f'root.left value is {root.left}')
     # right subtree of root has all
     # values >arr[mid]
     root.right = sortedArrayToBST(arr[mid+1:])
-    print(root.value)
-    return root
+    # print(f'root.right value is {root.left}')
+
+    return None
 
 
 def preOrder(node):
     if not node:
         return
-
-    print(node.value)
-    preOrder(node.right)
     preOrder(node.left)
+    preOrder(node.right)
+    print(node.value)
 
 
 print(sortedArrayToBST(arr))
