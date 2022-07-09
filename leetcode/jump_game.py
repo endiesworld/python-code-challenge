@@ -958,14 +958,14 @@ def max_result(nums, k):
     index = 1
 
     while index < arr_len:
-        # print(f'index is: {index}')
-        # print(f'start is: {stop}')
+        print(f'index is: {index}')
+        print(f'start is: {stop}')
         if stop < arr_len:
-            # print(f'slice array is: {nums[index: stop]}')
+            print(f'slice array is: {nums[index: stop]}')
             _max = nums[index: stop]
         else:
             _max = nums[index:]
-            # print(f'slice array is: {nums[index: ]}')
+            print(f'slice array is: {nums[index: ]}')
         max_val = max(_max)
         max_sum += max_val
         index = index + _max.index(max_val) + 1
