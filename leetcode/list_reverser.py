@@ -12,4 +12,10 @@ def list_reverser(list):
     return list[::-1]
 
 
+def arr_multiplication(arr):
+    return print([12]*4)
+
+
 print(list_reverser(a_list))
+
+print(arr_multiplication(a_list))
