@@ -11,13 +11,17 @@ n = [4, 5, 7, 35, 46]
 
 
 def fib(n):
-    store = {
+    return _fib(n,  store={
         1: 1,
         0: 0
-    }
-    if n in store.keys():
+    })
+
+
+def _fib(n, store):
+    if n in store:
         return store[n]
-    return fib(n-1) + fib(n-2)
+    store[n] = _fib(n-1, store) + _fib(n-2, store)
+    return store[n]
 
 
-print(fib(n[2]))
+print(fib(n[4]))
