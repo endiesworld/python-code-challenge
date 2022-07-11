@@ -24,7 +24,8 @@ item = [-2, 1, -3, 4]
 item = [3, -5, 1, 9, -2, 4]
 item = [8, -19, 5, -4, 20]
 # item = [-1, -2]
-item = [5, 4, -1, 7, 8]
+# item = [5, 4, -1, 7, 8]
+item = [5, 4, -1]
 
 
 def texter(nums):
@@ -47,4 +48,15 @@ def texter(nums):
     return (maxi)
 
 
+# def texter_recursive(nums):
+#     if len(nums) == 0:
+#         return 0
+#     maxi = float('-inf')
+
+#     result = nums[0] + texter_recursive(nums[1:])
+#     return result
+
 print(texter(item))
+
+
+# print(texter_recursive(item))
