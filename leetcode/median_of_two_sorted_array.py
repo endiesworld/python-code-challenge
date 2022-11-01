@@ -45,4 +45,55 @@ def findMedianSortedArrays(nums1, nums2):
         return float((merge[center - 1] + merge[center]) / 2)
 
 
-print(findMedianSortedArrays(nums1, nums2))
+def findMedianSortedArrays_(nums1, nums2):
+    num1_first = nums1[0]
+    num2_first = nums2[0]
+    counter = -1
+    added_element = None
+    common = []
+    while((added_element != num1_first) & (added_element != num2_first)):
+        num1 = nums1.pop()
+        num2 = nums2.pop()
+
+        if(num1 > num2):
+            nums2.append(num2)
+            common.append(num1)
+            counter -= 1
+            added_element = num1
+        else:
+            nums1.append(num1)
+            common.append(num2)
+            counter -= 1
+            added_element = num2
+
+    if(added_element == num2_first):
+        added_element = nums1.pop()
+        while(added_element != num1_first):
+            common.append(added_element)
+            counter -= 1
+            added_element = nums1.pop()
+        common.append(added_element)
+        counter -= 1
+
+    else:
+        added_element = nums2.pop()
+        while(added_element != num2_first):
+
+            common.append(added_element)
+            counter -= 1
+            added_element = nums2.pop()
+        common.append(added_element)
+        counter -= 1
+
+    is_merge_odd = abs(counter) % 2
+    print(common)
+    if is_merge_odd:
+        center = counter // 2
+        return float(common[center])
+    else:
+        center = int(counter / 2)
+        return float((common[center - 1] + common[center]) / 2)
+
+
+# print(findMedianSortedArrays(nums1, nums2))
+print(findMedianSortedArrays_(nums1, nums2))
