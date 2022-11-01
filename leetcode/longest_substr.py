@@ -73,18 +73,21 @@ def MinWindowSubstring(strArr):
 
     # code goes here
     store = {}
-    index_ref = []
+    index_ref = [strArr[0]]
     ref_store = {}
     last_index = -1
     new_string = ''
     empty = True
+    start = 0
+    stop = 0
     for char in strArr[1]:
         ref_store[char] = char
     ref_store_1 = ref_store
 
     for index, char in enumerate(strArr[0]):
-        if ((char in ref_store_1) and (char not in store)):
-            print(char)
+        if(index - 1 >= 0):
+            if (char in ref_store_1):
+                index_ref.append(char)
 
     for index in index_ref:
         new_string += strArr[0][index]
