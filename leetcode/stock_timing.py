@@ -15,6 +15,7 @@ Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 """
 from typing import List
+
 prices = [7, 1, 5, 3, 6, 4]
 prices = [7, 6, 4, 3, 1]
 # prices = [7, 5, 9, 3, 4, 5]
