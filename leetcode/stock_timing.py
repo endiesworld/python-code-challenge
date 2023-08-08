@@ -15,16 +15,18 @@ Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 """
 from typing import List
+
 prices = [7, 1, 5, 3, 6, 4]
-# prices = [7, 6, 4, 3, 1]
+prices = [7, 6, 4, 3, 1]
 # prices = [7, 5, 9, 3, 4, 5]
+prices = [7, 5, 9, 1, 4, 9]
 
 
 def timing(prices: List[int]) -> int:
     buy = prices[0]
-    datas = prices[1:]
+    # datas = prices[1:]
     profit = 0
-    for data in datas:
+    for data in prices:
         if data < buy:
             buy = data
         elif (data - buy) > profit:
