@@ -5,7 +5,7 @@ def exponential(a, n):
 
 
 # print(exponential(2, 8))
-n = [4, 5, 7, 35, 46]
+n = [4, 5, 8, 35, 46]
 
 #  Version I fibonacci solution
 
@@ -24,4 +24,4 @@ def _fib(n, store):
     return store[n]
 
 
-print(fib(n[4]))
+print(fib(n[2]))
