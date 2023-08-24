@@ -1,7 +1,7 @@
 import sys
 """
 https://leetcode.com/problems/powx-n/submissions/
-Personaly, this does not qualify to be a challenge because it is just staright forward
+Personally, this does not qualify to be a challenge because it is just too staright forward.
 Also, to improve performance, we can devide the quotient (n) by the prime numbers (2,3,5,7,13 etc.)
 """
 def main(x, n):
