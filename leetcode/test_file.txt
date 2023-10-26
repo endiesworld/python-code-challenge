@@ -1,0 +1,50 @@
+Experience
+
+Software Engineer, DataSwift, U.K (Contract).                                                                                     	11/2022 – 10/2023
+Tools: Python, FastAPI, TypeScript, React, AWS, PostgreSQL, Docker, Ansible, Circleci, Jira.
+Project: 
+Building an eKYC solution that is an identity platform focused on securing personal information and managing authorizations linked to this information and to an unforgeable identity.
+•	Collaborated within a geographically dispersed team of five Engineers spanning four continents, functioning as a full-stack developer on an eKYC Web App.
+•	Successfully established a CI/CD pipeline utilizing tools such as Github, CircleCI, AWS CLI, Cloudformation, Ansible, and Prometheus in shipping and monitoring new features and performance on an eKYC web App. 
+•	Wrote over 800 comprehensive test script scenarios for API functionalities on eKYC Web App.
+•	Orchestrated the creation of API documentation using Swagger and OpenAPI standards for over 800 API endpoints.
+
+Python Developer, Explore-AI , South Africa                                                                                               	09/2021 – 11/2022
+Tools: Python, Flask, AWS, Postgres, Pyspark, Docker, Ansible, Circleci, Reactjs, & Jira 
+Key Accomplishment (Explore-AI, South Africa):
+•	Successfully designed, implemented, and deployed a Movies Recommender System using Machine Learning on AWS for the IrokTV project, resulting in a remarkable 25% increase in customer retention and repeated patronage.
+•	Led the successful development and deployment of a Sentiment Analysis Machine Learning Model on AWS, leveraging tweet data from over 100,000 Twitter users to comprehensively analyze sentiments around climate change. 
+•	Collaboratively worked with a team of talented Data Scientists to effectively tackle the Spain Electricity Shortfall Challenge. Together, we created and deployed a Machine Learning Model on AWS that intelligently determined the best sector for directing energy sector investments, resulting in a remarkable 50% reduction in energy shortfalls.
+
+
+Full stack Developer, Izigo,  Nigeria 		             						 04/2019 -   09/ 2021
+Tools: JavaScript, Python, Reactjs HTML, CSS
+Key Accomplishment (Izigo,  Nigeria):
+•	Successfully launched a static webpage through AWS S3 bucket, seamlessly integrating a CDN service using AWS CloudFront for the MVP, which recorded 700 active users within two months. 
+•	Contributed collaboratively to the deployment of a resilient web application utilizing AWS CloudFormation. Orchestrated the setup across dual Availability Zones, ensuring high availability via a Load Balancer and Internet Gateway. Employed NAT Gateway for private Subnet services and maintained proactive monitoring through Autoscaling for provisioned Instances for over 10,000 active users. 
+•	Discerned opportunities for enhancements within the existing codebase, leading to the strategic development of impactful modifications of the existing codebase that reduced error logs by 17%.
+
+ 
+Skills:
+•	Software development: Python (fastAPI, Flask), TypeScript (React.js, Node.js), HTML, CSS(Tailwindcss).
+•	DevOps: CircleCI, Ansible, Prometheus, Docker, Linux/Shell, Kubernetes.
+•	Data Science: ETL, Statistics, Machine Learning.
+•	Cloud Computing: AWS, BigQuery.
+•	Project Management Tools: Github, Slack, Jira, Trello.
+•	Fluent Communication (English).
+•	Adept Listener.
+•	Time management.
+•	Problem Analysis & Solving.
+
+ 
+Languages:
+•	English (native).
+•	Igbo (native).
+•	Yoruba (fluent).
+
+ 
+Education:
+•	Udacity (11/2022 – 02/2023): Cloud-DevOps Nanodegree.
+•	Explore Data Science Academy (10/2021 – 10/2022): Data Science.
+•	University of Lagos, Nigeria (10/2015 – 06/2017): MSc. Electrical Engineering.
+•	University of Nigeria, Nsukka (01/2006 – 06/2011): BEng. Electrical Engineering.
