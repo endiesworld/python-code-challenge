@@ -26,6 +26,9 @@ def read_n(filename, chunk_size):
         print(f"No such directory {filename}")
     except UnicodeDecodeError as e:
         print(f"Could not decode {filename}")
+        
+    finally:
+        f.close()
     
 
 

@@ -12,7 +12,7 @@ complete_file_path = os.path.join(current_directory, filename)
 def numbers_of_vowels(filename):
     count = 0
     try:
-        # loping over the file object
+        # loping over the file object. But this is bad because I can't close the file
         for each_line in open(filename, 'r', encoding='UTF-8'):
             for each_char in each_line:
                 if each_char in 'aeiouAEIOU':
@@ -31,5 +31,16 @@ def numbers_of_vowels(filename):
 #     f.write('I am a full-stack dev from Nigeria')
 
 
-print(numbers_of_vowels("test_write_file.txt"))
-print(numbers_of_vowels(complete_file_path))
+def numbers_of_vowels_2(filename):
+    count = 0
+    with open(filename, 'r') as f:
+        for line in f:
+            for char in line:
+                if char in 'aeiouAEIOU':
+                    count += 1
+    return count
+
+# print(numbers_of_vowels("test_write_file.txt"))
+# print(numbers_of_vowels(complete_file_path))
+
+print(numbers_of_vowels_2(complete_file_path))
