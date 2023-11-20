@@ -1,0 +1,6 @@
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: DEBUG: main: Line: 33 This is a debug message
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: INFO: main: Line: 34 This is an info message
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: WARNING: main: Line: 35 This is a warning message
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: ERROR: main: Line: 36 This is an error message
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: CRITICAL: main: Line: 37 This is a critical message
+User:endiesworld@gmail.com 19/11/2023 15:43:39 PM: DEBUG: my_function: Line: 15 This is a debug-level function
