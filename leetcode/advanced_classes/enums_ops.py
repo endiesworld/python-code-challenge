@@ -1,4 +1,4 @@
-from enum import Enum, unique
+from enum import Enum
 
 #  You can prevent dublicate value by using the "@unique" 
 class Fruit(Enum):
