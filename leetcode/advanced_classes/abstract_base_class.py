@@ -2,6 +2,7 @@
     An abstract base class is a class that is used as a blueprint for other classes.
     An abstract base class is “Abstract” because it is non-existent.
     it’s just an ideal way for some other class to exist, but it cannot exist on its own.
+    Abstract methods are those methods without implementation or which are without the body. 
 """
 
 from abc import ABC, abstractmethod
