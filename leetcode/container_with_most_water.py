@@ -38,4 +38,29 @@ def maxArea(height):
     return max_area
 
 
-print(maxArea(height))
+# print(maxArea(height))
+
+
+def max_area(height):
+    max_water = 0
+    left = 0
+    right = len(height) - 1
+    
+    while left < right:
+        # Calculate the area between the two lines
+        area = min(height[left], height[right]) * (right - left)
+        max_water = max(max_water, area)
+        print(f"height[left]: {height[left]}, height[right]: {height[right]}, area: {area}, max_water {max_water}" )
+        # Move the pointers
+        if height[left] < height[right]:
+            left += 1
+        else:
+            right -= 1
+    
+    return max_water
+
+# Example usage:
+height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+# print(max_area(height))  # Output: 49
+
+print(1 in [])
